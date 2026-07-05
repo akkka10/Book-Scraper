@@ -55,17 +55,17 @@ DOWNLOAD_DELAY = 1
 #EXTENSIONS = {
 #    "scrapy.extensions.telnet.TelnetConsole": None,
 #}
-FEEDS={
-    'cleaned_book_infos.json':{'format':'json' ,'overwrite':True}
-}
+# FEEDS={
+#     'cleaned_book_infos.json':{'format':'json' ,'overwrite':True}
+# }
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   "bookscraper.pipelines.BookscraperPipeline": 300,
-   "bookscraper.pipelines.SaveToMySQLPipeline": 400,
+# ITEM_PIPELINES = {
+#    "bookscraper.pipelines.BookscraperPipeline": 300,
+#    "bookscraper.pipelines.SaveToMySQLPipeline": 400,
 
-}
+# }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
