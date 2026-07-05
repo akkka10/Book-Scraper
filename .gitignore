@@ -1,0 +1,49 @@
+
+venv/
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+
+.env
+
+*.sqlite3
+
+output/*.csv
+output/*.json
+# Virtual Environment
+venv/
+.venv/
+
+# Environment Variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+.venv
+venv/
+.venv/
+.env
+__pycache__/
