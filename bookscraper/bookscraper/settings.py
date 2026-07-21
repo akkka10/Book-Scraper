@@ -13,12 +13,7 @@ SPIDER_MODULES = ["bookscraper.spiders"]
 NEWSPIDER_MODULE = "bookscraper.spiders"
 
 ADDONS = {}
-FEEDS = {
-    "cleaned_book_infos.json": {
-        "format": "json",
-        "overwrite": True,
-    }
-}
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "bookscraper (+http://www.yourdomain.com)"
@@ -70,6 +65,12 @@ ITEM_PIPELINES = {
    "bookscraper.pipelines.BookscraperPipeline": 300,
    "bookscraper.pipelines.SaveToMySQLPipeline": 400,
 
+}
+FEEDS = {
+    "cleaned_book_infos.json": {
+        "format": "json",
+        "overwrite": True,
+    }
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

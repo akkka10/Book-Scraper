@@ -7,7 +7,7 @@ class BooksInfoSpider(scrapy.Spider):
     start_urls = ["https://books.toscrape.com/"]
 
     def parse(self, response):
-        books=response.css("article.producct_pod")
+        books=response.css("article.product_pod")
         for book in books:
             book_url=book.css("div.image_container a::attr(href)").get()
     

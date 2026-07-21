@@ -17,6 +17,7 @@ from itemadapter import ItemAdapter
 
 class BookscraperPipeline:
     def process_item(self, item, spider):
+        print("Processing item in BookscraperPipeline...")
         adapter=ItemAdapter(item)
         # to remove white spaces
         fields=adapter.field_names()
