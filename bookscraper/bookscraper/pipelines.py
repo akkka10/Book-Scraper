@@ -7,7 +7,10 @@ import re
 import os
 import mysql.connector
 from mysql.connector import Error
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
